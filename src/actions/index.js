@@ -1,53 +1,53 @@
 import {
-    CATEGORY_LOAD,
-    CATEGORY_LOAD_SUCCESS,
-    CATEGORY_LOAD_FAIL,
-    BRACELETS_LOAD,
-    BRACELETS_LOAD_SUCCESS,
-    BRACELETS_LOAD_FAIL,
-    EARRINGS_LOAD,
-    EARRINGS_LOAD_SUCCESS,
-    EARRINGS_LOAD_FAIL,
-} from '../constants';
+  LOAD_ALL,
+  LOAD_ALL_SUCCESS,
+  LOAD_ALL_FAIL,
+  LOAD_BRACELETS,
+  LOAD_BRACELETS_SUCCESS,
+  LOAD_BRACELETS_FAIL,
+  LOAD_EARRINGS,
+  LOAD_EARRINGS_SUCCESS,
+  LOAD_EARRINGS_FAIL,
+} from "../constants";
 
-export const loadCategory = () => ({
-    type: CATEGORY_LOAD,
+export const loadAll = () => ({
+  type: LOAD_ALL,
 });
 
-export const setCategory = category => ({
-    type: CATEGORY_LOAD_SUCCESS,
-    category,
+export const setAll = (all) => ({
+  type: LOAD_ALL_SUCCESS,
+  all,
 });
 
-export const setCategoryError = error => ({
-    type: CATEGORY_LOAD_FAIL,
-    error,
+export const setAllError = (error) => ({
+  type: LOAD_ALL_FAIL,
+  error,
 });
 
 export const loadBracelets = () => ({
-    type: BRACELETS_LOAD,
+  type: LOAD_BRACELETS,
 });
 
-export const setBracelets = bracelets => ({
-    type: BRACELETS_LOAD_SUCCESS,
-    bracelets,
+export const setBracelets = (bracelets) => ({
+  type: LOAD_BRACELETS_SUCCESS,
+  bracelets,
 });
 
-export const setBraceletsError = error => ({
-    type: BRACELETS_LOAD_FAIL,
-    error,
+export const setBraceletsError = (error) => ({
+  type: LOAD_BRACELETS_FAIL,
+  error,
 });
 
 export const loadEarrings = () => ({
-    type: EARRINGS_LOAD,
+  type: LOAD_EARRINGS,
 });
 
-export const setEarrings = earrings => ({
-    type: EARRINGS_LOAD_SUCCESS,
-    earrings,
+export const setEarrings = (earrings) => ({
+  type: LOAD_EARRINGS_SUCCESS,
+  earrings,
 });
 
-export const setEarringsError = error => ({
-    type: EARRINGS_LOAD_FAIL,
-    error,
+export const setEarringsError = (error) => ({
+  type: LOAD_EARRINGS_FAIL,
+  error,
 });
