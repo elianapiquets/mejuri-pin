@@ -8,6 +8,7 @@ import {
   LOAD_EARRINGS,
   LOAD_EARRINGS_SUCCESS,
   LOAD_EARRINGS_FAIL,
+  SAVE_LIKE,
 } from "../constants";
 
 export const loadAll = () => ({
@@ -50,4 +51,12 @@ export const setEarrings = (earrings) => ({
 export const setEarringsError = (error) => ({
   type: LOAD_EARRINGS_FAIL,
   error,
+});
+
+export const saveLike = (src, title, alt, id) => ({
+  type: SAVE_LIKE,
+  src,
+  title,
+  alt,
+  id,
 });
