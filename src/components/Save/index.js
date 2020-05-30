@@ -6,10 +6,18 @@ import { connect } from "react-redux";
 import { saveLike } from "../../actions";
 
 class Save extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      animating: 0,
+    };
+  }
+
   render() {
     return (
       <Container
         onClick={() => {
+          this.setState({animating: 1}),
           this.props.saveLike(
             this.props.src,
             this.props.title,
@@ -17,9 +25,11 @@ class Save extends Component {
             this.props.id
           );
         }}
+        animation={this.state.animating}
+        onAnimationEnd={() => this.setState({animating: 0})}
       >
         <Icon>
-          <FaThumbtack />
+          <FaThumbtack  />
         </Icon>
         <span>Save</span>
       </Container>

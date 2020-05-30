@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Container = styled.button`
+export const Container = styled.a`
     transition: all 0.5s ease-in-out;
     opacity: 0;
     border: none;
@@ -14,6 +14,7 @@ export const Container = styled.button`
     text-decoration: none;
     cursor: pointer;
     z-index: 100;
+    font-size: 14px;
 
     &:hover {
         transform: scale(1.05);
