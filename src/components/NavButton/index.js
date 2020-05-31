@@ -4,14 +4,14 @@ import { Container } from './styles';
 
 function NavButton(props) {
     return (
-        <Container to={props.to} selected={props.selected}>
+        <Container to={props.to}  activeClassName="selected">
             {props.children}
         </Container>
     );
 }
 NavButton.propTypes = {
     children: PropTypes.string.isRequired,
-    selected: PropTypes.bool,
+    activeClassName: PropTypes.string,
     to: PropTypes.string,
 };
 
