@@ -24,7 +24,7 @@ class App extends Component {
                 <NavButton to="/like">Like</NavButton>
                 <NavButton to="/bracelets">Bracelets</NavButton>
                 <NavButton to="/earrings"> Earrings</NavButton>
-                <NavButton to="/"> All</NavButton>
+                <NavButton exact to="/"> All</NavButton>
               </Nav>
             </Fragment>
             <Switch>

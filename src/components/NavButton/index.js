@@ -4,7 +4,7 @@ import { Container } from './styles';
 
 function NavButton(props) {
     return (
-        <Container to={props.to}  activeClassName="selected">
+        <Container exact={props.exact} to={props.to}  activeClassName="selected">
             {props.children}
         </Container>
     );
