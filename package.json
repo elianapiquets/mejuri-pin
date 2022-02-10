@@ -32,7 +32,7 @@
     "babel-preset-env": "^1.7.0",
     "css-loader": "^0.28.5",
     "gh-pages": "^1.2.0",
-    "node-sass": "^4.5.3",
+    "node-sass": "^7.0.0",
     "prettier": "^1.14.0",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.18.2",
